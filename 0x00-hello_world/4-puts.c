@@ -1,8 +1,8 @@
 #include<stdio.h>
 /**
- * main is the main function to handle your code.
+ * main -is the entry poimt for the program.
  *
- * Return question says return 0
+ * Return:zero if no error, Non zero value if errors 
 */
 
 int main(void)
