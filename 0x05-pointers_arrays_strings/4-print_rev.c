@@ -5,19 +5,21 @@
  * @s: The string
  */
 
-void print_rev(char *code)
+void print_rev(char *s)
 {
-    int len =0;
+	int  rev, len;
 
-    for (int i =0; i<code[len]; i++){
-        len++;
-       }
-   
+	len = 0;
 
-    for (len; len>=0; len--){
-       _putchar(code[len]);
-        }
+	while (s[len] != '\0')/*loops thru string len & count except last null char*/
+	{
+		len++;
+	}
 
+	for (rev = len - 1; rev >= 0; rev--)
+	{
+		_putchar(s[rev]);
+	}
 
-    _putchar('\n');
+	_putchar('\n');
 }
